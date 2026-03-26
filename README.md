@@ -504,3 +504,14 @@ Use resources efficiently — pack many containers onto one machine without wast
 Isolate failures — one broken container doesn't take down everything else
 Deploy anywhere — the same container runs on a laptop, a cloud server, or an edge node
 Scale down too — when traffic drops, kill the extra containers and stop paying for them
+
+
+
+Images
+<img width="1628" height="873" alt="Screenshot 2026-03-25 131011" src="https://github.com/user-attachments/assets/01d5d219-983e-4951-9fd0-8c3b3e5188a6" />
+<img width="1626" height="873" alt="Screenshot 2026-03-25 130145" src="https://github.com/user-attachments/assets/95ba3ce7-8f9f-4188-a04f-ce51976ee98e" />
+<img width="1622" height="867" alt="Screenshot 2026-03-25 130129" src="https://github.com/user-attachments/assets/34eb05e9-e005-4aba-b08a-72ea73e6a669" />
+<img width="1630" height="911" alt="Screenshot 2026-03-25 130109" src="https://github.com/user-attachments/assets/467d7868-d829-4e0f-b803-39801df7ef69" />
+<img width="1633" height="790" alt="Screenshot 2026-03-25 123355" src="https://github.com/user-attachments/assets/45e0aa2c-9516-4d7e-b447-3648b1d6aada" />
+<img width="1624" height="916" alt="Screenshot 2026-03-25 132447" src="https://github.com/user-attachments/assets/573e4ea4-bb05-47c1-9afd-245f95e22821" />
+
