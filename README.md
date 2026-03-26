@@ -120,9 +120,9 @@ Record the values — you will need them throughout this guide:
 
 | Hostname | Private IP | Public IP |
 |----------|------------|-----------|
-| k3s-master-1 | 10.0.x.x | 1.2.3.4 |
-| k3s-master-2 | 10.0.x.x | 1.2.3.5 |
-| k3s-master-3 | 10.0.x.x | 1.2.3.6 |
+| k3s-master-1 | 172.31.80.171 | 18.212.167.123 |
+| k3s-master-2 | 172.31.80.24 | 3.92.199.154 |
+| k3s-master-3 | 172.31.80.179 | 3.88.22.152 |
 
 ---
 
@@ -468,4 +468,20 @@ aws ec2 modify-instance-metadata-options \
 
 ### Private Registry (Amazon ECR)
 
-See `registries.yml` for the ECR configuration. The recommended approach on EC2 is to attach the `AmazonEC2ContainerRegistryReadOnly` IAM policy to the instance profile — no static credentials are needed.
+  See `registries.yml` for the ECR configuration. The recommended approach on EC2 is to attach the `AmazonEC2ContainerRegistryReadOnly` IAM policy to the instance profile — no static credentials are needed.
+
+
+
+Architecture Explanation (in README)
+   - What is k3s and why used
+K3s was designed for production even though its size is small, it supports high availability deployments and has simplified upgrades. It unifies control plane components into a single process. Anything that can be deployed on a full Kubernetes can work on K3s without changes, cuts some of the advanced features which are rarely used to stay small. This would work ideally for edge servers/small labs or low powered devices instead of huge enterprise clusters.
+
+   - Key components: control plane - Consolidates Kubernetes components
+   - agents - They connect to the control plane using secure agent tunneling
+   - container runtime - Containerd is the default and preconfigured runtime
+   - CNI -  Flannel is included by default for networking
+   - ingress/load balancer - for service load balancing
+   - storage approach - It can be easily integrated with external solutions
+
+
+
