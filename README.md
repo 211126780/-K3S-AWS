@@ -485,3 +485,22 @@ K3s was designed for production even though its size is small, it supports high 
 
 
 
+Reflection
+What did you learn?
+Starting new things can be scary as I am new to linux/Kubernetes gradually I started to understand the step-by-step process in the notes as well as going to google and use of AI to assist me regarding this new experience.
+ What challenges did you face and how did you resolve them?
+The challenges varied as I was scared, I would go over the 4-hour mark thinking it would not refresh. I had to redo my nodes 3 times as I copy pasted the commands into a document but not splitting my commands up for the 3 nodes as I saw codes from the notes on my master node for example (10.x.x.x) K3s-master-1 was in my line of code so the other nodes could not join.
+Eventually on the 3rd attempt I typed each code out manually and my nodes managed to join.
+How does k3s relate to production Kubernetes / 5G cloud-native concepts?
+K3s was designed for production even though its size is small, it supports high availability deployments and has simplified upgrades. It unifies control plane components into a single process.
+Anything that can be deployed on a full Kubernetes can work on K3s without changes, cuts some of the advanced features which are rarely used to stay small. This would work ideally for edge servers/small labs or low powered devices instead of huge enterprise clusters.
+
+How do virtualization and containerization enable scalable services?
+Virtualization takes one physical server and splits them into multiple virtual machines, each acting independently from one another.
+Containerization took that idea and modified it further. Rather than virtualizing the whole server/computer, containers just wrap up the application itself — the code, the settings, the bits it needs to run — and nothing else.
+Together they enable scalability in various ways:
+Spin up fast — need to handle more traffic? Launch more containers in seconds, not hours
+Use resources efficiently — pack many containers onto one machine without waste
+Isolate failures — one broken container doesn't take down everything else
+Deploy anywhere — the same container runs on a laptop, a cloud server, or an edge node
+Scale down too — when traffic drops, kill the extra containers and stop paying for them
